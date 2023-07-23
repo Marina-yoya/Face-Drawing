@@ -49,6 +49,17 @@ body {
     border-bottom: 3px solid rgb(245, 187, 164);
 }
 
+.eye-pupil {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(46, 27, 17);
+    border-radius: 100%;
+    margin-left: 15px;
+    margin-bottom: 7px;
+}
+
 .eye::before {
     content: "";
     position: absolute;
@@ -60,15 +71,39 @@ body {
     margin-bottom: 5px;
 }
 
-.eye::after {
-    content: "";
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    background-color: rgb(46, 27, 17);
-    border-radius: 100%;
-    margin-left: 15px;
-    margin-bottom: 7px;
+
+
+.shut {
+    position: relative;
+    bottom: 15px;
+    width: 100%;
+    height: 20%;
+    background-color: rgb(245, 187, 164);
+    animation: eyeshut 2s ease-in-out;
+}
+
+@keyframes eyeshut {
+    0% {
+        height: 10%;
+    }
+
+    10% {
+        height: 100%;
+    }
+
+    20% {
+        height: 200%;
+        
+    }
+
+    100% {
+        height: 0%;
+    }
+}
+
+.eyes:hover>.eye .shut {
+    height: 200%;
+    bottom: 2px;
 }
 
 .brow {
@@ -171,9 +206,11 @@ body {
 .teeth li:nth-child(7) {
     right: 20%;
 }
+
 .teeth li:nth-child(8) {
     right: 10%;
 }
+
 .teeth li:nth-child(9) {
     right: 0%;
 }
