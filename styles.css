@@ -93,7 +93,7 @@ body {
 
     20% {
         height: 200%;
-        
+
     }
 
     100% {
@@ -129,7 +129,7 @@ body {
 }
 
 .mouth {
-    position: absolute;
+    position: relative;
     width: 100px;
     height: 30px;
     background: rgb(248, 149, 154);
@@ -139,6 +139,19 @@ body {
     border-right-width: 1px;
     border-left-width: 1px;
     border-top-width: 2px;
+}
+
+.mouth-shut:hover {
+
+    position: absolute;
+    display: block;
+    margin-top: 225px;
+    bottom: -2px;
+    width: 100%;
+    height: 110%;
+    background-color: rgb(231, 5, 50);
+    border-radius: 20% 20% 100% 100%;
+    content-visibility: hidden;
 }
 
 .teeth {
@@ -151,6 +164,8 @@ body {
     display: block;
     background-color: rgb(201, 102, 107);
     z-index: 0;
+
+
 }
 
 .teeth li {
