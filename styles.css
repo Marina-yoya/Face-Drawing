@@ -35,6 +35,42 @@ body {
 
 }
 
+.brow {
+    width: 65px;
+    height: 32px;
+    border-top: 10px solid rgb(78, 49, 30);
+    border-radius: 0 100% 100% 0;
+    margin-bottom: 35%;
+}
+
+.brow:first-child {
+    border-radius: 100% 0 0 100%;
+}
+
+.makeup {
+    position: absolute;
+    width: 195px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.makeup-eye {
+    width: 64px;
+    height: 42px;
+    border-top: 1px solid rgb(65, 49, 38);
+    background: rgb(33,25,19);
+    background: linear-gradient(41deg, rgba(33,25,19,1) 0%, rgba(167,105,74,1) 100%);
+    border-radius: 0 76% 67% 0;
+    margin-bottom: 16%;
+    
+}
+
+.makeup-eye:first-child {
+    border-radius: 76% 0 0 67%;
+    background: rgb(33,25,19);
+background: linear-gradient(333deg, rgba(33,25,19,1) 0%, rgba(167,105,74,1) 100%);
+}
+
 .eye {
     display: flex;
     justify-content: center;
@@ -106,17 +142,6 @@ body {
     bottom: 2px;
 }
 
-.brow {
-    width: 65px;
-    height: 32px;
-    border-top: 10px solid rgb(78, 49, 30);
-    border-radius: 0 100% 100% 0;
-    margin-bottom: 35%;
-}
-
-.brow:first-child {
-    border-radius: 100% 0 0 100%;
-}
 
 .nose {
     position: absolute;
