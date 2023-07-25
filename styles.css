@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+/* using flexbox model to create a row or a column
+ axis layout and make the drawing responsive */
 
 body {
     display: flex;
@@ -14,6 +16,7 @@ body {
     margin: auto;
     background-color: rgb(15, 35, 43);
 }
+
 
 .head {
     background: rgb(248, 215, 202);
@@ -31,8 +34,6 @@ body {
     width: 195px;
     display: flex;
     justify-content: space-between;
-
-
 }
 
 .brow {
@@ -43,9 +44,13 @@ body {
     margin-bottom: 35%;
 }
 
+/* making the both brows looks the same */
+
 .brow:first-child {
     border-radius: 100% 0 0 100%;
 }
+
+
 
 .makeup {
     position: absolute;
@@ -118,6 +123,8 @@ body {
     animation: eyeshut 2s ease-in-out;
 }
 
+/* eye blink animation */
+
 @keyframes eyeshut {
     0% {
         height: 10%;
@@ -137,6 +144,7 @@ body {
     }
 }
 
+/* eye blink on hover */
 .eyes:hover>.eye .shut {
     height: 200%;
     bottom: 2px;
@@ -166,6 +174,7 @@ body {
     border-top-width: 2px;
 }
 
+/* mouth shut on hover */
 .mouth-shut:hover {
 
     position: absolute;
@@ -323,12 +332,15 @@ body {
     transform: rotate(-45deg);
 }
 
+/* responsive design on tablet screen */
 
 @media all and (max-width: 600px) {
     body {
         width: 45vh;
     }
 }
+
+/* responsive design on mobile screen */
 
 @media screen and (max-width: 400px) {
 
@@ -359,7 +371,7 @@ body {
     .makeup,
     .brows {
         width: 176px
-    }
+    } 
 
     .nose {
         width: 36px;
